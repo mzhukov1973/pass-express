@@ -1,0 +1,41 @@
+<%
+   const isString = arg => (((typeof arg).match(/String/gi)===null)?false:true)
+   const fullWeightsList = ['black','extrabold','bold','semibold','medium','regular','light','extralight','thin']
+   const fontTypes = ['woff2','woff','ttf','eot']
+   const err = (err_text,fName,fStyles,fWeights,fType) => {
+     console.error("preloadFont(fName,fStyles,fWeights,fType) error! Error message is: '%s'.\nfName(%s)=%o\nfStyles(%s)=%o\nfWeights(%s)=%o\nfType(%s)=%o",err_text,(typeof fName),fName,(typeof fStyles),fStyles,(typeof fWeights),fWeights,(typeof fType),fType)
+     return -1
+   }
+   const validatePreloadFontArgs = (fName,fStyles,fWeights,fType) => {
+//console.log("=========================================")
+//console.log("fName=(%s)%o;\nisString(fName)=(%s)%o;\nfName.length=(%s)%o;\n!isString(fName)=(%s)%o;\n(fName.length===0)=(%s)%o;\n( !isString(fName) || (fName.length===0) )=(%s)%o;", (typeof fName), fName, (typeof isString(fName)), isString(fName), (typeof fName.length), fName.length, (typeof !isString(fName)), !isString(fName), (typeof (fName.length===0)), (fName.length===0), (typeof (!isString(fName) || (fName.length===0))), (!isString(fName) || (fName.length===0)))
+//console.log("fType=(%s)%o;\nisString(fType)=(%s)%o;", (typeof fType), fType, (typeof isString(fType)), isString(fType))
+//console.log("fontTypes.includes(fType.toLowerCase())=(%s)%o", (typeof fontTypes.includes(fType.toLowerCase())), fontTypes.includes(fType.toLowerCase()))
+//console.log("=========================================")
+     if ( !isString(fName) || (fName.length===0) ) {return err('[fName] is not set, not a string or a zero-length string.',fName,fStyles,fWeights,fType)}
+     else if (!(Array.isArray(fWeights) || (isString(fWeights) && (fullWeightsList.concat(['all'])).includes(fWeights.toLowerCase())))) {return err('[fWeights] is neither an array, nor a string, denoting a valid font weight or containing special value \'all\'.',fName,fStyles,fWeights,fType)}
+     else if ((fStyles!=1)&&(fStyles!=2)) {return err('[fStyles] is neither 1 nor 2, irrespective of type conversions.',fName,fStyles,fWeights,fType)}
+     else if (!(isString(fType) && fontTypes.includes(fType.toLowerCase()))) {return err('[fType] is either not a string, or does not contain a recognised font type.',fName,fStyles,fWeights,fType)}
+     return 0
+   }
+   const preloadFont = (fName,fStyles,fWeights,fType) => {
+     fStyles  = (fStyles==1)?1:2
+     fWeights = ((typeof fWeights)==='undefined')?'all':fWeights
+     fType = ((typeof fType).match(/String/gi)===null)?'woff2':fType
+     if (validatePreloadFontArgs(fName,fStyles,fWeights,fType)<0) {return false}
+     if (isString(fWeights)) {
+       if (fWeights.toLowerCase()==='all')                        { fWeights = fullWeightsList }
+       else if (fullWeightsList.includes(fWeights.toLowerCase())) { fWeights = [fWeights]      }
+     }
+     fStyles = (fStyles==2?['Normal','Italic']:['Normal'])
+
+     return {fileName:fName, style:fStyles, weight:fWeights, fileType:fType}
+   }
+%>
+  <%- include('home.head.03.preload-fonts-item.ejs', {'font':preloadFont('NotoSansDisplay'                )} ) %>
+  <%- include('home.head.03.preload-fonts-item.ejs', {'font':preloadFont('NotoSerif'                      )} ) %>
+  <%- include('home.head.03.preload-fonts-item.ejs', {'font':preloadFont('NotoSansMono',     1            )} ) %>
+  <%- include('home.head.03.preload-fonts-item.ejs', {'font':preloadFont('NotoSansSymbols',  1            )} ) %>
+  <%- include('home.head.03.preload-fonts-item.ejs', {'font':preloadFont('NotoMono',         1, 'Regular' )} ) %>
+  <%- include('home.head.03.preload-fonts-item.ejs', {'font':preloadFont('NotoSansLinearB',  1, 'Regular' )} ) %>
+  <%- include('home.head.03.preload-fonts-item.ejs', {'font':preloadFont('NotoSansSymbols2', 1, 'Regular' )} ) %>

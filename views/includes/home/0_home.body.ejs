@@ -1,0 +1,7 @@
+<%- include('home.body.00.top.ejs'); %>
+ <%- include('home.body.01.block000-mixed.ejs', {user:user}); %>
+ <%- include('home.body.02.block001-unprotected.ejs'); %>
+ <% if (user) { %>
+  <%- include('home.body.03.block002-protected.ejs'); %>
+ <% } %>
+<%- include('home.body.04.bottom.ejs'); %>

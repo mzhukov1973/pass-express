@@ -1,0 +1,91 @@
+{
+  "name": "pass-express",
+  "short_name": "passExpress",
+  "description": "Various tests built around authentication with Passport.js & Express.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Maxim Zhukov",
+    "email": "mzhukov31415dev@gmail.com",
+    "url": "https://github.com/mzhukov1973"
+  },
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "js",
+    "node",
+    "browser",
+    "test",
+    "asynchronous",
+    "async",
+    "authentication",
+    "oauth",
+    "oauth2.0",
+    "passportjs",
+    "express",
+    "connect"
+  ],
+  "homepage": "https://mzhukov1973.github.io/pass-express",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mzhukov1973/pass-express.git"
+  },
+  "bugs": {
+    "email": "mzhukov31415dev@gmail.com",
+    "url": "https://github.com/mzhukov1973/pass-express/issues"
+  },
+  "contributors": [
+    {
+      "name": "Maxim Zhukov",
+      "email": "mzhukov31415dev@gmail.com",
+      "url": "https://github.com/mzhukov1973"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Maxim Zhukov",
+      "email": "mzhukov31415dev@gmail.com",
+      "url": "https://github.com/mzhukov1973"
+    }
+  ],
+  "dependencies": {
+    "better-sqlite3": "latest",
+    "compression": "latest",
+    "connect-ensure-login": "latest",
+    "connect-pg-simple": "latest",
+    "connect-sqlite3": "latest",
+    "cors": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "passport": "latest",
+    "passport-google-oauth": "latest",
+    "passport-local": "latest",
+    "passport-twitter": "latest",
+    "pg-async": "latest",
+    "pg-native": "latest",
+    "serve-favicon": "latest",
+    "serve-static": "latest",
+    "uid-promise": "latest",
+    "universal-dotenv": "latest"
+  },
+  "devDependencies": {
+  },
+  "bundleDependencies": [
+    "connect-sqlite3",
+    "better-sqlite3",
+    "pg-native",
+    "uid-promise",
+    "universal-dotenv",
+    "passport-google-oauth",
+    "passport-twitter"
+  ],
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=11.8.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "deploy-gh": "echo \"Deploying to gh-pages...\" && exit 1",
+    "test": "echo \"Error: no test specified!\" && exit 1"
+  }
+}

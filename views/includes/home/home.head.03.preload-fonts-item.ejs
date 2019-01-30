@@ -1,0 +1,23 @@
+<%
+ const capitaliseWeight = ftW => {
+   if (ftW.substring(0,5).toLowerCase()==='extra') {
+     return 'Extra'+ftW.substring(5,6).toUpperCase()+ftW.substring(6).toLowerCase()
+   }
+   else if (ftW.substring(0,4).toLowerCase()==='semi') {
+     return 'Semi'+ftW.substring(4,5).toUpperCase()+ftW.substring(5).toLowerCase()
+   } else {
+     return ftW.substring(0,1).toUpperCase()+ftW.substring(1).toLowerCase()
+   }
+ }
+ const capitaliseStyle  = ftS => (ftS.substring(0,6).toLowerCase()==='normal')?'Normal':'Italic'
+
+ if (font!==false) {
+   font.weight.forEach(el=>{
+     font.style.forEach(em=>{
+%>
+ <link rel='preload'       type='font/<%= font.fileType %>'   href='/fonts/<%= font.fileName %>-<%= capitaliseWeight(el) %><%= capitaliseStyle(em) %>.<%= font.fileType %>'           as='font' crossorigin='anonymous'>
+<%
+     })
+   })
+ }
+%>

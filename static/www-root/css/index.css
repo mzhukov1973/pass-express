@@ -1,0 +1,155 @@
+/*
+@import '/fonts/NotoMono.css'
+@import '/fonts/NotoSansMono.css'
+@import '/fonts/NotoSansDisplay.css'
+@import '/fonts/NotoSerif.css'
+@import '/fonts/NotoSansSymbols.css'
+@import '/fonts/NotoSansSymbols2.css'
+@import '/fonts/NotoSansLinearB.css'
+*/
+/*
+  Font families:
+    Noto Mono
+    Noto Sans Mono
+    Noto Sans Display
+    Noto Serif
+    Noto Sans Symbols
+    Noto Sans Symbols2
+    Noto Sans LinearB
+*/
+
+:root {
+}
+
+html {
+  font-size:16px;
+  font-family:'Noto Sans Display','sans-serif';
+  margin:0;
+  padding:0;
+  background-color: transparent;
+  background-image: url('/images/logo-256x256.svg');
+  background-repeat: no-repeat;
+  background-position: left 0em top 0em;
+  animation-name: bgChange;
+  animation-duration: 16s;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+body {
+  font-size: 1rem;
+  background-color:rgba(255,255,255,0.7);
+  margin:0;
+  margin-top:-0.5em;
+  padding:0.5em;
+}
+
+@keyframes bgChange {
+  0%   { background-position: left 0%   top 1em;   }
+  50%  { background-position: left 100% top 1em;   }
+  100% { background-position: left 0%   top 1em;   }
+}
+
+a {
+  color:rgb(0,0,238);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+a:visited {
+  color:rgb(85,26,139);
+}
+
+a:hover {
+  color:rgb(0,0,238);
+  text-decoration:underline;
+}
+
+a:active {
+  color:rgb(255,0,0);
+}
+
+code {
+  background-color:rgba(192,192,192,0.5);
+  font-family:'monospace';
+/*  font-family:'Noto Mono','monospace'; */
+/*  font-family:'Noto Sans Mono','monospace'; */
+  font-size:0.8rem;
+  vertical-align:middle;
+  margin:0 0.125em;
+  padding: 0 0.125em;
+}
+
+.mono {
+  font-family:'monospace';
+}
+.notomono {
+  font-family:'Noto Mono';
+}
+.notosansmono {
+  font-family:'Noto Sans Mono';
+}
+.notosanssymbols {
+  font-family:'Noto Sans Symbols';
+}
+.notosanssymbols2 {
+  font-family:'Noto Sans Symbols2';
+}
+.notoserif {
+  font-family:'Noto Serif';
+}
+.notoserif>strong {
+  font-family:'Noto Serif';
+  font-weight: bold;
+  font-style: normal;
+}
+.notosansdisplay {
+  font-family:'Noto Sans Display';
+}
+.notosanslinearb {
+  font-family:'Noto Sans Linear B';
+}
+.courier {
+  font-family:'Courier New';
+}
+
+.logoOne {
+  height: 1em;
+  vertical-align:top;
+  position:relative;
+  top:-0.5em;
+  padding:0em;
+  margin:0em;
+}
+
+.header_cont {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header_block {
+  margin: 0;
+  padding: 0;
+  border: none;
+  order: 0;
+  flex-grow: 1;
+  text-align: left;
+  vertical-align: middle;
+}
+.login_block {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size:0.6em;
+  order: 1;
+  flex-grow: 0;
+  text-align: right;
+  vertical-align: middle;
+}
