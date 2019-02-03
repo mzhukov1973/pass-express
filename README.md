@@ -106,6 +106,7 @@ Various tests centering around authentication with Passport.js & Express.
  - **[&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.2`</sup></sup></sup>** **connect-pg-simple** <sup>[GitHub<sup>®</sup>](https://github.com/voxpelli/node-connect-pg-simple), [npm<sup>®</sup>](https://www.npmjs.com/package/connect-pg-simple)</sup>: *A simple, minimal PostgreSQL session store for Express/Connect.*
  - **[&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.2`</sup></sup></sup>** **memorystore**  <sup>[GitHub<sup>®</sup>](https://github.com/roccomuso/memorystore), [npm<sup>®</sup>](https://www.npmjs.com/package/memorystore)</sup>: *Full featured, production-grade version of the basic `express-session` session in-memory store.*
 <br>
+
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.3`</sup></sup></sup> **better-sqlite3** <sup>[GitHub<sup>®</sup>](https://github.com/JoshuaWise/better-sqlite3), [npm<sup>®</sup>](https://www.npmjs.com/package/better-sqlite3)</sup>: *The fastest and simplest library for SQLite3 in Node.js.*.
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.3`</sup></sup></sup> **passport-local**</del> <sup>[GitHub<sup>®</sup>](https://github.com/jaredhanson/passport-local), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-local), [Site](http://www.passportjs.org/packages/passport-local)</sup>: *Passport.js Local (i.e. username&password) authentication strategy.*
      - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.3`</sup></sup></sup> **SQLite3**:    *Using SQLite3 as back-end to store credentials.*
@@ -115,25 +116,31 @@ Various tests centering around authentication with Passport.js & Express.
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.3`</sup></sup></sup> **passport-mail** <sup>[GitHub<sup>®</sup>](https://github.com/sklyukin/passport-mailru), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-mail, [Site](http://www.passportjs.org/packages/passport-mail))</sup>: *Passport strategy for authenticating with Mailru using the OAuth 2.0 API.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.3`</sup></sup></sup> **connect-sqlite3** <sup>[GitHub<sup>®</sup>](https://github.com/rawberg/connect-sqlite3), [npm<sup>®</sup>](https://www.npmjs.com/package/connect-sqlite3)</sup>: *SQLite3 session store for connect and express.*
 <br>
+
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.4`</sup></sup></sup> **passport-facebook** <sup>[GitHub<sup>®</sup>](https://github.com/jaredhanson/passport-facebook), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-facebook, [Site](http://www.passportjs.org/packages/passport-facebook))</sup>: *Passport strategy for authenticating with Facebook using the OAuth 2.0 API.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.4`</sup></sup></sup> **passport-instagram** <sup>[GitHub<sup>®</sup>](https://github.com/jaredhanson/passport-instagram), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-instagram, [Site](http://www.passportjs.org/packages/passport-instagram))</sup>: *Passport strategy for authenticating with Instagram using the OAuth 2.0 API.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.4`</sup></sup></sup> **passport-dropbox-oauth2** <sup>[GitHub<sup>®</sup>](https://github.com/florianheinemann/passport-dropbox-oauth2), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-dropbox-oauth2, [Site](http://www.passportjs.org/packages/passport-dropbox-oauth2))</sup>: *Passport strategy for authenticating with Dropbox using the OAuth 2.0 API.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.4`</sup></sup></sup> **passport-imgur** <sup>[GitHub<sup>®</sup>](https://github.com/mindfreakthemon/passport-imgur), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-imgur, [Site](http://www.passportjs.org/packages/passport-imgur))</sup>: *Passport strategy for authenticating with Imgur using the OAuth 2.0 API.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.4`</sup></sup></sup> **passport-yahoo** <sup>[GitHub<sup>®</sup>](https://github.com/jaredhanson/passport-yahoo), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-yahoo, [Site](http://www.passportjs.org/packages/passport-yahoo))</sup>: *Passport strategy for authenticating with Yahoo! using OpenID 2.0.*
 <br>
+
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.5`</sup></sup></sup> **passport-oauth2** <sup>[GitHub<sup>®</sup>](https://github.com/jaredhanson/passport-oauth2), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-oauth2, [Site](http://www.passportjs.org/packages/passport-oauth2))</sup>: *General-purpose OAuth 2.0 authentication strategy for Passport.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.5`</sup></sup></sup> **passport-openid** <sup>[GitHub<sup>®</sup>](https://github.com/jaredhanson/passport-openid), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-openid, [Site](http://www.passportjs.org/packages/passport-openid))</sup>: *Passport strategy for authenticating with OpenID.*
 <br>
+
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.6`</sup></sup></sup> **passport-custom** <sup>[GitHub<sup>®</sup>](https://github.com/mbell8903/passport-custom), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-custom, [Site](http://www.passportjs.org/packages/passport-custom))</sup>: *Passport strategy for authenticating with custom logic.*
 <br>
+
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.7`</sup></sup></sup> **passport-http-bearer** <sup>[GitHub<sup>®</sup>](https://github.com/jaredhanson/passport-http-bearer), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-http-bearer, [Site](http://www.passportjs.org/packages/passport-http-bearer))</sup>: *HTTP Bearer authentication strategy for Passport.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.7`</sup></sup></sup> **passport-cookie** <sup>[GitHub<sup>®</sup>](https://github.com/rojo2/passport-cookie), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-cookie, [Site](http://www.passportjs.org/packages/passport-cookie))</sup>: *Cookie authentication strategy for Passport.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.7`</sup></sup></sup> **passport-jwt** <sup>[GitHub<sup>®</sup>](https://github.com/themikenicholson/passport-jwt), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-jwt, [Site](http://www.passportjs.org/packages/passport-jwt))</sup>: *A Passport strategy for authenticating with a JSON Web Token.*
 <br>
+
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.8`</sup></sup></sup> **passport-hash** <sup>[GitHub<sup>®</sup>](https://github.com/yuri-karadzhov/passport-hash), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-hash, [Site](http://www.passportjs.org/packages/passport-hash))</sup>: *Passport strategy for authenticating with a hash parameter provided by link.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.8`</sup></sup></sup> **passport-2fa-totp** <sup>[GitHub<sup>®</sup>](https://github.com/ilich/passport-2fa-totp), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-2fa-totp, [Site](http://www.passportjs.org/packages/passport-2fa-totp))</sup>: *Passport strategy for Two-factor authenticating with a username, password and TOTP code.*
  - [&nbsp;&nbsp;&nbsp;]<sup><sup><sup>`0.0.8`</sup></sup></sup> **passport-publickey** <sup>[GitHub<sup>®</sup>](https://github.com/timfpark/passport-publickey), [npm<sup>®</sup>](https://www.npmjs.com/package/passport-publickey, [Site](http://www.passportjs.org/packages/passport-publickey))</sup>: *Passport strategy for authenticating using a public/private key pair to sign a nonce challenge.*
 <br>
+
  - [&nbsp;&nbsp;&nbsp;]*<sup><sup><sup>`0.0.9+`</sup></sup></sup>* **...** <sup>[GitHub<sup>®</sup>](...), [npm<sup>®</sup>](https://www.npmjs.com/package/..., [Site](...))</sup>: *...*
 
 
