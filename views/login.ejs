@@ -1,10 +1,15 @@
-<form action="/login" method="post">
- <div><label>Username:</label> <input type="text" name="username"/><br/></div>
- <div><label>Password:</label> <input type="password" name="password"/></div>
- <div><input type="submit" value="Submit"/></div>
-</form>
+<div>
+ <label>Sign in with Username/Password</label>
+ <form action="/login" method="post">
+  <div><label>Username:</label>&nbsp;<input type="text" name="username"/><br/></div>
+  <div><label>Password:</label>&nbsp;<input type="password" name="password"/></div>
+  <div><input type="submit" value="Sign In"/></div>
+ </form>
+</div>
 <hr>
-<a href="/auth/twitter">Sign in with Twitter</a><br>
-<a href="/auth/google">Sign In with Google</a>
+<div><label>Sign in with Google (OAuth2.0)</label>&nbsp;<a href="/auth/google-oauth20">Sign In</a></div>
+<div><label>Sign in with Google (OpenID)</label>&nbsp;<a href="/auth/google">Sign In</a></div>
+<div><label>Sign in with Twitter</label>&nbsp;<a href="/auth/twitter">Sign In</a></div>
+<div><label>Sign in with Auth0</label>&nbsp;<a href="/auth/auth0">Sign In</a></div>
 <hr>
 
