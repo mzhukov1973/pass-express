@@ -13,7 +13,7 @@ const passportInitGoogleOAuth20Strategy = () => { /* Configure passport Google O
   passport.use(new GoogleStrategy( {clientID:................, clientSecret:......., callbackURL:'https://mzhukov1973.github.io/pass-express/auth/google/callback'}, (accessToken, refreshToken, profile, done) => User.findOrCreate({googleId:profile.id},(err,user)=>done(err,user)) ))
 }
 
-const passportInitGoogleStrategy        = () => { /* Configure passport Google (OpenID) strategy. */
+const passportInitGoogleStrategy        = () => { /* Configure passport Google (OpenID 2.0) strategy. */
 //  const PassportStrategy = require('passport-google')...
 //  passport.use()
 }
@@ -28,6 +28,10 @@ const passportInitAuth0Strategy         = () => { /* Configure passport Auth0 st
 //  passport.use()
 }
 
+const passportInitGitHub2Auth0Strategy         = () => { /* Configure passport GitHub2 strategy. */
+//  const PassportStrategy = require('passport-github2')...
+//  passport.use()
+}
 
 
 module.exports = (passportStrat='local', passportStratLocalBackEnd='postgres') => {
@@ -46,6 +50,9 @@ module.exports = (passportStrat='local', passportStratLocalBackEnd='postgres') =
      break
     case 'auth0':
      passportInitAuth0Strategy()
+     break
+    case 'github2':
+     passportInitGitHub2Strategy()
      break
     default:
      passportInitLocalStrategy()

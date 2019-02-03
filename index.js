@@ -89,6 +89,8 @@ app.get(  '/auth/twitter',                                                      
 app.get(  '/auth/twitter/callback',                                                                function(req,res){res.redirect('/auth/twitter')}                                          )	/* Passport.js strategies, placeholders/stubs */
 app.get(  '/auth/auth0',                                                                           function(req,res){res.render('auth-auth0')}                                               )	/* Passport.js strategies, placeholders/stubs */
 app.get(  '/auth/auth0/callback',                                                                  function(req,res){res.redirect('/auth/auth0')}                                            )	/* Passport.js strategies, placeholders/stubs */
+app.get(  '/auth/github2',                                                                         function(req,res){res.render('auth-github2')}                                             )	/* Passport.js strategies, placeholders/stubs */
+app.get(  '/auth/github2/callback',                                                                function(req,res){res.redirect('/auth/github2')}                                          )	/* Passport.js strategies, placeholders/stubs */
 app.get(  '/www2e/cors',                                                                           function (req,res,next) {res.json({msg:'This is CORS, enabled for all origins!'})}        )	/* simple usage (enable all CORS requests)       */
 //app.get(  '/www2e/cors', cors(),                                                                   function (req,res,next) {res.json({msg:'This is CORS, enabled for this single route!'})}  )	/* enable CORS for a single route /www2e/cors    */
 
