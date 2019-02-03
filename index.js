@@ -49,8 +49,11 @@ const uid                    = require('uid-safe')
 //request.get(uri).end((err,response)=>{/*Response is now cached! Subsequent calls to this superagent request will now fetch the cached response.*/})      //superagent-cache
 
 /* N.B.: Since base64 encoding is used, 24 requested bytes translate to string of (24*8/6=)32 characters. (May contain '-' and '_'.) */
-const uuid_strAsync = await uid(24)
-console.log("'uid-safe'-generated (generally speaking, asyncronously) cryptographically secure random string of 32 characters, with '=', '+' and '/' replaced with '', '-' and '_' respectively:\n'%s'", uuid_strAsync)
+const aau = async () => {
+  const uuid_strAsync = await uid(24) 
+  console.log("'uid-safe'-generated (generally speaking, asyncronously) cryptographically secure random string of 32 characters, with '=', '+' and '/' replaced with '', '-' and '_' respectively:\n'%o'", uuid_strAsync)
+}
+aau()
 const uuid_strSync = uid.sync(24)
 console.log("'uid-safe'-generated (syncronously) cryptographically secure random string of 32 characters, with '=', '+' and '/' replaced with '', '-' and '_' respectively:\n'%s'", uuid_strSync)
 

@@ -37,7 +37,7 @@ const findByUsernameInternal = (username,doneCallBack) => {
   })
 }
 
-module.exports = driver='pg' => {
+module.exports = (driver='pg') => {
   let toExport = {}
   pgPromiseInitOptions.pgNative = driver==='native' ? true : false
   pgPromise                     = require('pg-promise')(pgPromiseInitOptions)
