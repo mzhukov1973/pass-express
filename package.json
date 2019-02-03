@@ -49,7 +49,7 @@
   ],
   "dependencies": {
     "better-sqlite3": "latest",
-    "bluebird":"latest",
+    "bluebird": "latest",
     "compression": "latest",
     "connect-ensure-login": "latest",
     "connect-pg-simple": "latest",
