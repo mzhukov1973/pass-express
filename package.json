@@ -52,7 +52,7 @@
     "bluebird": "latest",
     "compression": "latest",
     "connect-ensure-login": "latest",
-    "connect-pg-simple": "latest",
+    "connect-pg-simple": ">=6.0.1"
     "connect-sqlite3": "latest",
     "cors": "latest",
     "ejs": "latest",
